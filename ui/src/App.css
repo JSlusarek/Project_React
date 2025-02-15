@@ -1,0 +1,109 @@
+body {
+  background: linear-gradient(to right, #ffffff, #a1dbe2); /* Gradient od błękitu do turkusu */
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', sans-serif; /* Nowoczesna, minimalistyczna czcionka */
+  color: #013a63; /* Głęboki granatowy - dobrze komponuje się z wodnymi odcieniami */
+}
+
+
+/* 🏠 Główna zawartość aplikacji */
+.App {
+  text-align: center;
+  background: #ffffff; /* Subtelne tło dla przejrzystości */
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 850px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Elegancki cień */
+}
+
+/* 🔥 Nagłówki */
+h1, h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #3a506b;
+  margin-bottom: 20px;
+}
+
+/* 📜 Lista filmów */
+ul.movies-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+/* 🎞 Karty filmów */
+ul.movies-list li {
+  background: #e3f2fd; /* Pastelowy błękit */
+  margin: 12px 0;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* 🎭 Aktorzy w liście */
+ul.movies-list li div {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 🖱 Efekt hover na kartach filmów */
+ul.movies-list li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* 🟢 Przyciski */
+button {
+  background: #a2b29f; /* Pastelowy oliwkowy */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #8b9a89;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+/* 🔗 Linki */
+.App-link {
+  color: #3a506b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.App-link:hover {
+  color: #2a3d58;
+}
+
+/* ➕ Przycisk "Add a Movie" */
+.add-movie-button {
+  background: #a2b29f;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-movie-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
